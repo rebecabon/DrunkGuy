@@ -154,22 +154,22 @@ public class Main extends Application {
 
     public void Steps(int x, int y) {
         CubicCurveTo cubicTo = new CubicCurveTo();
-        // convertir par de coordenadas a la escala 1:50
+        // convert pair of coordenates to scale 1:50
         int newX = convertX(x);
         int newY = convertY(y);
-        // cola del camino recorrido
+        // tail of path
         LineTo line = new LineTo(newX, newY);
         tail.getElements().add(line);
-        // asignar el vértice destino
+        // get to the new vertex/position
         cubicTo.setX(newX);
         cubicTo.setY(newY);
-        // valores de control de la curva
-        // para cuatrapear al borracho en su camino al destino
-        cubicTo.setControlX1(newX - 25);
+        // control values of the curve
+        // to simulate the unsteady steps of the druk guy
+        cubicTo.setControlX1(newX - 100);
         cubicTo.setControlY1(newY + 50);
         cubicTo.setControlX2(newX + 50);
         cubicTo.setControlY2(newY - 75);
-        // agregar el par de coordenadas en la escala 1:50
+        // add pair of coordenates in scale 1:50
         path.getElements().add(cubicTo);
     }
 
