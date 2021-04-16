@@ -20,7 +20,7 @@ public class Main extends Application {
     PROBLEM
     A drunk guy decides to walk 10 blocks in order to below the effects of alcohol.
     Calculate the probability of him walking 2 blocks or further from the beginning point.
-    SUCCESS = he walks 2 blocks or more far from the beginning point.
+    SUCCESS = he walks 2 blocks or further from the beginning point.
     FAIL = he doesn't get to walk further more than 2 blocks.
     PROBABILITY = number of success / number of iterations
 
