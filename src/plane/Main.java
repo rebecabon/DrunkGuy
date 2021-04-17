@@ -70,8 +70,8 @@ public class Main extends Application {
             // attributes of transitions' object
             PathTransition transition = new PathTransition();
             transition.setDuration(Duration.seconds(20 * numSimulations));
-            transition.setPath(path); // camino a seguir
-            transition.setNode(drunkGuy); // objeto a moverse
+            transition.setPath(path); // path to follow
+            transition.setNode(drunkGuy); // moving object
             transition.setCycleCount(1);
             transition.setOrientation(PathTransition.OrientationType.ORTHOGONAL_TO_TANGENT);
             transition.play();
